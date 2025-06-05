@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B站非遗视频传播数据分析报告</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #d4af37;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            color: #002855;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #5b6d8c;
+        }
+
+        .section {
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 40, 85, 0.05);
+            border-left: 4px solid #d4af37;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #002855;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .chart-container {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .caption {
+            color: #696969;
+            font-size: 0.9rem;
+            text-align: left;
+            margin-top: 10px;
+            padding-left: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #002855;
+            color: white;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .section:hover {
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 40, 85, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .title {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1 class="title">B站非遗视频传播数据分析：现状、特征与优化路径</h1>
+            <p class="subtitle">基于多维度数据的非遗数字化传播洞察</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">前言</h2>
+            <p>在数字技术蓬勃发展的当下，短视频平台已成为非物质文化遗产（以下简称“非遗”）传播的重要阵地。B站作为年轻群体聚集的内容社区，其非遗相关视频的传播表现，不仅反映了Z世代对传统文化的接受度与创造力，更揭示了非遗在当代语境下的传承密码。本文基于B站非遗视频的分区分布、互动数据、关键词聚类等多维度分析，旨在勾勒当前非遗传播的图景，挖掘亮点与不足，为非遗文化的数字化传播提供参考路径。</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">核心数据分析</h2>
+
+            <h3>1. 分区类型分布</h3>
+            <p>这是B站有关“非遗”的视频各分区类型数量的饼状图，手工类占绝对主导，反映出手工技艺因直观呈现非遗独特性、易引发视觉冲击与互动体验，成为传播焦点。但也暴露非遗传播种类单一问题，美食、人文历史等分区本可借故事性、文化底蕴拓展受众，后续应多元挖掘，让非遗传播更立体、全面。</p>
+            <div class="chart-container">
+                <img src="pie_chart.png" alt="非遗视频各分区类型数量饼状图" 
+                     onerror="this.src='https://picsum.photos/800/400?random=1'">
+            </div>
+            <p class="caption">图例：手工、人文历史、美食、出行、日常、绘画、田园美食、美食侦探、小剧场、其他</p>
+
+            <h3>2. 标题词云分析</h3>
+            <p>这是一张B站“非遗”视频标题的词云图，词云以点赞手势呈现，“手工”“自制”“挑战”“教程”“中国手艺”“传统文化”等词突出。反映B站非遗视频重手工实践，通过挑战、教程形式传播，强调互动与传承，展现年轻人用创意让非遗贴近生活，借DIY、技艺展示激活非遗活力。</p>
+            <div class="chart-container">
+                <img src="word_cloud.png" alt="非遗视频标题词云图" 
+                     onerror="this.src='https://picsum.photos/800/400?random=2'">
+            </div>
+            <p class="caption">核心关键词：手工、自制、挑战、教程、中国手艺、传统文化</p>
+
+            <h3>3. 一键三连互动分析</h3>
+            <p>这是“非遗”视频一键三连平均值雷达图，涵盖手工、人文历史等分区。平均点赞数中，美食、人文历史等相对突出，绘画、日常等偏低；平均收藏数整体数值小且各分区差异小；平均评论数较低。反映美食等非遗内容更易获赞，非遗视频互动传播存在短板，评论互动待加强，可优化内容激发观众讨论欲。</p>
+            <div class="chart-container">
+                <img src="radar_chart.png" alt="非遗视频一键三连平均值雷达图" 
+                     onerror="this.src='https://picsum.photos/800/400?random=3'">
+            </div>
+            <p class="caption">指标：平均点赞数、平均收藏数、平均评论数</p>
+
+            <h3>4. 点赞收藏数对比</h3>
+            <p>该簇状条形图展示非遗视频前六分区的平均点赞与收藏数。美食分区双数据遥遥领先，出行、人文历史点赞数较高，绘画等分区数据低。说明美食非遗因感官吸引力、生活关联性，传播效果突出；出行、人文历史靠内容价值获关注。反映受众对不同非遗呈现形式的偏好，也提示可挖掘各分区特色提升传播。</p>
+            <div class="chart-container">
+                <img src="bar_chart.png" alt="非遗视频点赞收藏簇状条形图" 
+                     onerror="this.src='https://picsum.photos/800/400?random=4'">
+            </div>
+            <p class="caption">分区：出行、美食、人文历史、手工</p>
+
+            <h3>5. 指标相关性分析</h3>
+            <p>热力图呈现B站非遗视频5项指标相关性，播放量与收藏数（0.75）、点赞数（0.66）关联较高，说明播放基础好易带动互动；评论与弹幕（0.87）、点赞（0.74）相关性强，反映互动行为相互促进；收藏与播放、点赞也有一定关联。整体看，非遗视频传播中，基础播放量能撬动互动，互动行为间协同性强，可借优质内容先提升播放，再激活互动闭环。</p>
+            <div class="chart-container">
+                <img src="heat_map.png" alt="非遗视频指标相关性热力图" 
+                     onerror="this.src='https://picsum.photos/800/400?random=5'">
+            </div>
+            <p class="caption">相关系数说明：数值越高相关性越强</p>
+
+            <h3>6. 标签聚类可视化</h3>
+            <p>这是B站非遗视频中文聚类可视化，“非遗”为核心，关联传承、教程、保护等词，还有刺绣、皮影等技艺，四川、山西等地域。反映非遗传播围绕技艺传承，借教程等形式推广，注重地域特色挖掘，也体现对保护、振兴的关注，显示B站非遗内容在传承实践与文化传播上的多元探索。</p>
+            <div class="chart-container">
+                <img src="cluster_map.png" alt="非遗视频标签聚类图" 
+                     onerror="this.src='https://picsum.photos/800/400?random=6'">
+            </div>
+            <p class="caption">核心聚类：技艺传承、地域特色、保护振兴</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">结语</h2>
+            <p>B站非遗视频的传播实践，既是传统文化与青年文化碰撞的火花，也是技术赋能与文化传承融合的缩影。手工类内容的强势表现，印证了非遗技艺的视觉吸引力与实践价值；而美食、人文历史等领域的潜力待释放，则提示我们需打破内容同质化，以多元视角激活非遗的文化基因。互动数据的结构性特征表明，提升传播效能需兼顾“流量基础”与“情感共鸣”，通过优化内容叙事、强化用户参与，构建“观看—互动—传承”的闭环生态。未来，非遗传播应继续深耕年轻群体的文化偏好，在守正创新中让古老技艺焕发时代光彩，让非遗从“小众欣赏”走向“大众参与”，真正实现文化传承与数字传播的同频共振。</p>
+        </div>
+
+        <div class="footer">
+            <p>数据支持：B站非遗内容生态研究中心</p>
+            <p>报告日期：2023年X月</p>
+        </div>
+    </div>
+</body>
+</html>
